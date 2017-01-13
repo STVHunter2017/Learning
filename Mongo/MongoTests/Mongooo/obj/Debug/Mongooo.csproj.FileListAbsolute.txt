@@ -1,0 +1,16 @@
+C:\repos\Learning\Mongo\MongoTests\Mongooo\obj\Debug\Mongooo.csprojResolveAssemblyReference.cache
+C:\repos\Learning\Mongo\MongoTests\Mongooo\bin\Debug\Mongooo.dll
+C:\repos\Learning\Mongo\MongoTests\Mongooo\bin\Debug\Mongooo.pdb
+C:\repos\Learning\Mongo\MongoTests\Mongooo\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\repos\Learning\Mongo\MongoTests\Mongooo\bin\Debug\MongoDB.Bson.dll
+C:\repos\Learning\Mongo\MongoTests\Mongooo\bin\Debug\MongoDB.Driver.Core.dll
+C:\repos\Learning\Mongo\MongoTests\Mongooo\bin\Debug\MongoDB.Driver.dll
+C:\repos\Learning\Mongo\MongoTests\Mongooo\bin\Debug\MongoDB.Driver.Legacy.dll
+C:\repos\Learning\Mongo\MongoTests\Mongooo\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\repos\Learning\Mongo\MongoTests\Mongooo\bin\Debug\MongoDB.Bson.xml
+C:\repos\Learning\Mongo\MongoTests\Mongooo\bin\Debug\MongoDB.Driver.xml
+C:\repos\Learning\Mongo\MongoTests\Mongooo\bin\Debug\MongoDB.Driver.Core.xml
+C:\repos\Learning\Mongo\MongoTests\Mongooo\bin\Debug\MongoDB.Driver.Legacy.xml
+C:\repos\Learning\Mongo\MongoTests\Mongooo\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\repos\Learning\Mongo\MongoTests\Mongooo\obj\Debug\Mongooo.dll
+C:\repos\Learning\Mongo\MongoTests\Mongooo\obj\Debug\Mongooo.pdb
