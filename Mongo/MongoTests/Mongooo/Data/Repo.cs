@@ -22,7 +22,7 @@ namespace Mongooo.Data
         public void GetCollection(string collectionName)
         {
             bool created;
-            var collection = GetCollection(collectionName, out created);            
+            var collection = GetCollection(collectionName, out created);                        
         }
 
         protected IMongoCollection<BsonDocument> GetCollection(string collectionName, out bool created)
@@ -51,6 +51,16 @@ namespace Mongooo.Data
             var collections = Database.ListCollections(new ListCollectionsOptions { Filter = filter });
             //check for existence
             return (collections.ToList()).Any();
+        }
+
+        public void Add(string collectionName, string hello)
+        {
+            bool created;
+            var collection = GetCollection(collectionName, out created);
+
+            BsonDocument doc = new BsonDocument{{ "hello", hello}};
+            
+            collection.InsertOne(doc);
         }
     }
     

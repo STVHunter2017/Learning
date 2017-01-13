@@ -31,5 +31,14 @@ namespace Mongooo
             this.repo.GetCollection("STV1");
 
         }
+
+        [TestMethod]
+        public void CanAddToACollection()
+        {
+            this.repo.GetCollection("STV1");
+
+            this.repo.Add("STV", "Hello");
+
+        }
     }
 }
