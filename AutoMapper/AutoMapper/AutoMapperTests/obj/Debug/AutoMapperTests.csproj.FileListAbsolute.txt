@@ -1,0 +1,8 @@
+C:\repos\Learning\AutoMapper\AutoMapper\AutoMapperTests\bin\Debug\AutoMapperTests.dll
+C:\repos\Learning\AutoMapper\AutoMapper\AutoMapperTests\bin\Debug\AutoMapperTests.pdb
+C:\repos\Learning\AutoMapper\AutoMapper\AutoMapperTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\repos\Learning\AutoMapper\AutoMapper\AutoMapperTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\repos\Learning\AutoMapper\AutoMapper\AutoMapperTests\obj\Debug\AutoMapperTests.dll
+C:\repos\Learning\AutoMapper\AutoMapper\AutoMapperTests\obj\Debug\AutoMapperTests.pdb
+C:\repos\Learning\AutoMapper\AutoMapper\AutoMapperTests\bin\Debug\AutoMapper.dll
+C:\repos\Learning\AutoMapper\AutoMapper\AutoMapperTests\bin\Debug\AutoMapper.xml
