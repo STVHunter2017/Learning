@@ -1,0 +1,8 @@
+C:\Users\Steve\AppData\Local\Temporary Projects\Expression\bin\Debug\Expression.exe.config
+I:\repos\Learning\Expression\Expression\bin\Debug\Expression.exe.config
+I:\repos\Learning\Expression\bin\Debug\Expression.exe.config
+I:\repos\Learning\Expression\bin\Debug\Expression.exe
+I:\repos\Learning\Expression\bin\Debug\Expression.pdb
+I:\repos\Learning\Expression\obj\Debug\Expression.csprojResolveAssemblyReference.cache
+I:\repos\Learning\Expression\obj\Debug\Expression.exe
+I:\repos\Learning\Expression\obj\Debug\Expression.pdb
