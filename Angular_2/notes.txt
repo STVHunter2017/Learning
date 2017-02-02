@@ -1,0 +1,36 @@
+Type script is super set of Javascript.
+Transpiler makes typescript into Javascript. (Syntactic Sugar)
+
+static typing:
+let name : string
+let name =""
+
+interfaces
+interface ICat{
+	name : string
+	age? : number (optional)
+}
+
+
+class
+class cat{
+	name:string
+	constructor(name){			
+		this.name = name
+	}
+}
+
+Public\Private
+class members are public by default
+to make private - add private
+
+Special case
+class cat{
+	contstructor (private name, private color)
+	{
+		//Creates locally iniatialsed private properties
+	}
+}
+
+
+
