@@ -34,3 +34,5 @@ class cat{
 
 
 
+Ang1: MVC
+Ang2: Component
