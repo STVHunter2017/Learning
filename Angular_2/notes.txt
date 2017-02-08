@@ -11,6 +11,7 @@ interface ICat{
 	age? : number (optional)
 }
 
+Angular CLI is a quick start that sets up the basic angualar system, tests, components and a variety of other bits and pieces
 
 class
 class cat{
