@@ -24,4 +24,6 @@ export class EventThumnailComponent{
     LogFoo() {
         console.log('Foo')
     }
+
+    someProperty:any="Some Value"
 }
