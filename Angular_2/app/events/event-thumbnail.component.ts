@@ -16,8 +16,7 @@ import {Component, Input } from '@angular/core'
         </div>    
             `,
   styles:[`
-    .pad-left {margin-left: 10px;}
-    .well div {color: red;}
+    .pad-left {margin-left: 10px;}   
   `]  
 })
 
