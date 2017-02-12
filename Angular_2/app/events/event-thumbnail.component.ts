@@ -19,11 +19,5 @@ import {Component, Input, Output, EventEmitter } from '@angular/core'
 })
 
 export class EventThumnailComponent{
-    @Input() event: any
-    @Output() eventClick = new EventEmitter()
-    LogFoo() {
-        console.log('Foo')
-    }
-
-    someProperty:any="Some Value"
+    @Input() event: any    
 }
