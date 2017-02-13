@@ -37,3 +37,20 @@ class cat{
 
 Ang1: MVC
 Ang2: Component
+
+
+{{user.name}} Interpolation  - double braces
+[] Property Binding - square brackets and expression in quotes [src] = "user.name"
+{{2 +2}} Interpolation  - NG would evaluate 
+{{getIt()}} Interpolation  -Ng would call function
+
+Expressions cannot use (=, +=, __, etc)
+Cannot use new
+Cannot use chaining
+Cannot use global properies e.g. console.writeline.
+
+Expressions Should be:
+No side effects
+Fast
+Simple
+Idempotent - always get same result
