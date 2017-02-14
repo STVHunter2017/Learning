@@ -54,3 +54,10 @@ No side effects
 Fast
 Simple
 Idempotent - always get same result
+
+(click) = "doSomething"  - Event Binding
+Statements
+	allow assignements (only =)
+	Simple
+	Can Chain
+
