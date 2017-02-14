@@ -61,3 +61,6 @@ Statements
 	Simple
 	Can Chain
 
+Looping structure
+<event-thumbnail *ngFor="let indexer of collection"  [property]="indexer"></event-thumbnail>
+* means that they remove and add HTML to the DOM.
