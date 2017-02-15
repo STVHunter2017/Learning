@@ -9,10 +9,12 @@ import {EventService} from './shared/event.service'
             <div class="row">  
                 <div *ngFor="let event of events" class="col-md-5" >         
                     <event-thumbnail [event]="event"></event-thumbnail>             
-                </div>         
+                </div>                         
             </div>
         `,    
 })
+
+//This generates a null exception <event-thumbnail></event-thumbnail>
 
 export class EventsListComponent implements OnInit {
   events: any  
