@@ -10,10 +10,12 @@ import {Component, Input } from '@angular/core'
                     <div>Price : £{{event?.price}}</div>         
                 
                     <div>
-                        <span>Location: {{event?.location?.address}}</span>                                                
-                        <span class="pad-left">{{event?.location?.city}}, {{event.location?.country}}</span>
+                        <div *ngIf="event?.location">
+                            <span>Location: {{event?.location?.address}}</span>                                                
+                            <span class="pad-left">{{event?.location?.city}}, {{event.location?.country}}</span>
+                        </div>                    
                     </div>                    
-                    <div>
+                    <div *ngIf="event?.onlineUrl">
                         Online URL : {{event?.onlineUrl}}
                     </div>
         </div>    
