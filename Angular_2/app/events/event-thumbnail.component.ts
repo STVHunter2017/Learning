@@ -10,7 +10,7 @@ import {Component, Input } from '@angular/core'
                     <div>Price : £{{event?.price}}</div>         
                 
                     <div>
-                        <div *ngIf="event?.location">
+                        <div [hidden]="!event?.location">
                             <span>Location: {{event?.location?.address}}</span>                                                
                             <span class="pad-left">{{event?.location?.city}}, {{event.location?.country}}</span>
                         </div>                    
