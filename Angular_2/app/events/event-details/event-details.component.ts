@@ -1,6 +1,6 @@
 //events/1
 import {Component } from '@angular/core'
-// import {EventService} from '../shared/event.service'
+import {EventService} from '../shared/event.service'
 
 @Component ({
     templateUrl: './app/events/event-details/event-details.component.html',
@@ -11,10 +11,10 @@ import {Component } from '@angular/core'
 })
 
 export class EventDetailsComponent {
-    // event : any
-    // constructor(private EventService.EventService){        
-    // }
-    // ngOnInit(){
-    //     this.event = this.EventService.getEvent(1)
-    // }
+    event : any
+    constructor(private eventService:EventService){        
+    }
+    ngOnInit(){
+        this.event = this.eventService.getEvent(1)
+    }
 }

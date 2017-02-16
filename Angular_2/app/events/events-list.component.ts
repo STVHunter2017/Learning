@@ -1,7 +1,6 @@
 import {Component, OnInit } from '@angular/core'
 import {EventService} from './shared/event.service'
-@Component ({
-    selector: 'events-list',
+@Component ({    
     template: `
          <div>
             <h1>Upcoming Angular 2 Events</h1>
@@ -29,3 +28,5 @@ export class EventsListComponent implements OnInit {
 
 //private is short for creating a local variable and populating it from from the constructor
 //implements OnInit compiler safety
+
+//selector: 'events-list', was removed as we use Routing to get to it not direct access
