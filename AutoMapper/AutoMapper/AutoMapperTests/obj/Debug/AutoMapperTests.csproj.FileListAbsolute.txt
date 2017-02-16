@@ -6,3 +6,4 @@ C:\repos\Learning\AutoMapper\AutoMapper\AutoMapperTests\obj\Debug\AutoMapperTest
 C:\repos\Learning\AutoMapper\AutoMapper\AutoMapperTests\obj\Debug\AutoMapperTests.pdb
 C:\repos\Learning\AutoMapper\AutoMapper\AutoMapperTests\bin\Debug\AutoMapper.dll
 C:\repos\Learning\AutoMapper\AutoMapper\AutoMapperTests\bin\Debug\AutoMapper.xml
+C:\repos\Learning\AutoMapper\AutoMapper\AutoMapperTests\obj\Debug\AutoMapperTests.csprojResolveAssemblyReference.cache

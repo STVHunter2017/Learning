@@ -56,9 +56,12 @@
   <ItemGroup>
     <Compile Include="Auto.cs" />
     <Compile Include="Brute.cs" />
+    <Compile Include="ComplexIn_Dto.cs" />
+    <Compile Include="ComplextOut_Dto.cs" />
     <Compile Include="In_Dto.cs" />
     <Compile Include="Mapper.cs" />
     <Compile Include="Out_Dto.cs" />
+    <Compile Include="UnitTest2.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
