@@ -6,7 +6,7 @@ import {Component, Input } from '@angular/core'
          <div [routerLink]="['/events', event.id]" class="well hoverwell thumbnail">
                 <h2>{{event?.name}}</h2>
                     <div>Date : {{event?.date}}</div>
-                    <div [ngClass]="{green: event?.time === '8:00 am', bold:event?.time === '8:00 am'}"  [ngSwitch] = "event?.time"> 
+                    <div [ngClass]="getStartTimeClass()" [ngSwitch] = "event?.time"> 
                         Time : {{event?.time}}
                     
                         <span *ngSwitchCase="'8:00 am'" >(Early Start)</span>
@@ -38,6 +38,12 @@ import {Component, Input } from '@angular/core'
 
 export class EventThumnailComponent{
     @Input() event: any    
+
+    getStartTimeClass(){
+        const isEarlyStart = this.event && this.event.time === '8:00 am'
+
+        return {green: isEarlyStart, bold:isEarlyStart}
+}
 }
 
 //? is the safe navigation marker
@@ -45,3 +51,4 @@ export class EventThumnailComponent{
 //[class.green]="event?.time === '8:00am'" is a class binding
 //!important; forces style to not be overridden, this is due to the CSS in existince in this app.
 //ngClass creates a class to hold the styles and rules that apply
+//ngClass requires a space separated list, an array or a class.
