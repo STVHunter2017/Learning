@@ -11,11 +11,12 @@ import {EventService} from './events/shared/event.service'
 import {appRoutes} from './routes'
 import {CreateEvent} from './events/create-event-component'
 import {Error404Component} from './errors/404.component'
+import {EventRouteActivator} from './events/event-details/event-route-activator.service'
 
 @NgModule({
     imports : [BrowserModule, RouterModule.forRoot(appRoutes)],
     declarations : [EventsAppComponent, EventsListComponent, EventThumnailComponent, NavbarComponent, EventDetailsComponent, CreateEvent,Error404Component],    
-    providers: [EventService],
+    providers: [EventRouteActivator, EventService],
     bootstrap:  [EventsAppComponent]
 
 })
