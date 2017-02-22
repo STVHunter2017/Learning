@@ -5,7 +5,7 @@ import {Component, Input } from '@angular/core'
     template: `
          <div [routerLink]="['/events', event.id]" class="well hoverwell thumbnail">
                 <h2>{{event?.name}}</h2>
-                    <div [style.color]="event?.time ==='8:00 am' ? '#003300' : '#bbb'">Date : {{event?.date}}</div>
+                    <div [ngStyle]= "{'color' : event?.time ==='8:00 am' ? '#003300' : '#bbb', 'font-weight': event?.time ==='8:00 am' ? 'bold' : 'normal' }">Date : {{event?.date}}</div>
                     <div [ngClass]="getStartTimeClass()" [ngSwitch] = "event?.time"> 
                         Time : {{event?.time}}
                     
