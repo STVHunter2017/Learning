@@ -16,9 +16,19 @@ import {EventRouteActivator} from './events/event-details/event-route-activator.
 @NgModule({
     imports : [BrowserModule, RouterModule.forRoot(appRoutes)],
     declarations : [EventsAppComponent, EventsListComponent, EventThumnailComponent, NavbarComponent, EventDetailsComponent, CreateEvent,Error404Component],    
-    providers: [EventRouteActivator, EventService],
+    providers: [EventRouteActivator, 
+                EventService,
+                {
+                    provide: 'canDeactivateCreateEvent', useValue: checkDirtyState
+                }
+                ],
     bootstrap:  [EventsAppComponent]
 
 })
 
 export class AppModule{}
+
+
+function checkDirtyState(){
+    return false;
+}
