@@ -5,7 +5,7 @@ import {Component, Input } from '@angular/core'
     template: `
          <div [routerLink]="['/events', event.id]" class="well hoverwell thumbnail">
                 <h2>{{event?.name}}</h2>
-                    <div [ngStyle]= "{'color' : event?.time ==='8:00 am' ? '#003300' : '#bbb', 'font-weight': event?.time ==='8:00 am' ? 'bold' : 'normal' }">Date : {{event?.date}}</div>
+                    <div [ngStyle]= "getStartTimeStyle()">Date : {{event?.date}}</div>
                     <div [ngClass]="getStartTimeClass()" [ngSwitch] = "event?.time"> 
                         Time : {{event?.time}}
                     
@@ -45,6 +45,13 @@ export class EventThumnailComponent{
         
         return []
 }
+
+   getStartTimeStyle():any{
+        if (this.event && this.event.time === '8:00 am')
+            return {color:'green', 'font-weight': 'bold'}
+        
+        return {}
+}
 }
 
 //? is the safe navigation marker
@@ -54,3 +61,4 @@ export class EventThumnailComponent{
 //ngClass creates a class to hold the styles and rules that apply
 //ngClass requires a space separated list, an array or a class.
 //class and NgClass play well together
+//use :any as the shapes of the objects are different
