@@ -1,5 +1,7 @@
 import {Component, OnInit } from '@angular/core'
 import {EventService} from './shared/event.service'
+import {ToastrService} from '../common/toastr-service'
+
 @Component ({    
     template: `
          <div>
@@ -7,22 +9,26 @@ import {EventService} from './shared/event.service'
             <hr>  
             <div class="row">  
                 <div *ngFor="let event of events" class="col-md-5" >         
-                    <event-thumbnail [event]="event"></event-thumbnail>             
+                    <event-thumbnail [event]="event"></event-thumbnail>
+                    <button type="button" class="btn"  (click)="handleThumbnailClick(event.name)">Test</button>
                 </div>                         
             </div>
         `,    
 })
 
 //This generates a null exception <event-thumbnail></event-thumbnail>
-
 export class EventsListComponent implements OnInit {
   events: any  
-  constructor(private eventService : EventService){
+  constructor(private eventService : EventService, private toastrService: ToastrService){
     //this.events = this.eventService.getEvents()  - move from constructor to NgOnInit
   }
 
   ngOnInit()  {
     this.events = this.eventService.getEvents()
+  }
+
+  handleThumbnailClick(eventName){
+    this.toastrService.success(eventName)
   }
 }
 
