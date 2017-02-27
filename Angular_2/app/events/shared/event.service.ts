@@ -1,10 +1,13 @@
 import { Injectable} from '@angular/core' 
+import {Subject} from 'rxjs/RX' // this is to get Observables and allow the code to run Async?
 
 @Injectable() //Strictly only needed if a service requires other injected services.
 export class EventService
 {
     getEvents(){
-        return EVENTS
+        let subject  = new Subject()  //Subject is an Observable
+        setTimeout(() => {subject.next(EVENTS); subject.complete();}, 2000)  //This allows a record to be delivered every 100ms into subject
+        return subject
     }
 
    getEvent (id: number){
