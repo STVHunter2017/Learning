@@ -1,6 +1,8 @@
 import {Component, OnInit } from '@angular/core'
 import {EventService} from './shared/event.service'
 import {ToastrService} from '../common/toastr-service'
+import {ActivatedRoute} from '@angular/router'
+
 
 @Component ({    
     template: `
@@ -19,12 +21,12 @@ import {ToastrService} from '../common/toastr-service'
 //This generates a null exception <event-thumbnail></event-thumbnail>
 export class EventsListComponent implements OnInit {
   events: any  
-  constructor(private eventService : EventService, private toastrService: ToastrService){
-    //this.events = this.eventService.getEvents()  - move from constructor to NgOnInit
+  constructor(private eventService : EventService, private toastrService: ToastrService, private route:ActivatedRoute){
+    
   }
 
   ngOnInit()  {
-    this.eventService.getEvents().subscribe(events=> {this.events = events} ) //Eventually this will return and will populate events when it does.
+    this.events = this.route.snapshot.data['events'] //read events list from the (events) property on the route added by the resolver.
   }
 
   handleThumbnailClick(eventName){
