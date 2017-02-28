@@ -16,11 +16,11 @@
 
         <li>
 
-          <a [routerLink]= "['/events']" >All Events</a> 
+          <a [routerLink]= "['/events']" routerLinkActive="active"[routerLinkActiveOptions]="{exact:true}" >All Events</a>
           
         </li>
 
-        <li><a [routerLink]="['/events/new']">Create Event</a></li>
+        <li><a [routerLink]="['/events/new']" routerLinkActive="active">Create Event</a></li>
 
         <li class="dropdown">
 
@@ -81,3 +81,8 @@
   </div>
 
 </div>
+
+<!-- active is a class on the component
+     routerLinkActive does a starts with (based on the routerLink property)to determine when to apply the style.
+     {exact:true} forces the link to be explicit
+ -->
