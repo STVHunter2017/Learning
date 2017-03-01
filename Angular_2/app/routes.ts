@@ -1,10 +1,17 @@
 import {Routes} from '@angular/router'  //Adds intelisense for Routes
-import {EventsListComponent} from './events/events-list.component'
-import {EventDetailsComponent} from './events/event-details/event-details.component'
-import {CreateEventComponent} from './events/create-event-component'
 import {Error404Component} from './errors/404.component'
-import {EventRouteActivator} from './events/event-details/event-route-activator.service'
-import {EventsListResolverService } from './events/shared/events-list.resolver.service'
+
+import {
+    EventsListComponent,
+    EventThumnailComponent,    
+    EventService,
+    EventDetailsComponent,    
+    CreateEventComponent,
+    EventRouteActivator,
+    EventsListResolverService
+} from './events/index'
+
+
 
 export const appRoutes: Routes = [
     {path: 'events', component: EventsListComponent, resolve: {events : EventsListResolverService}},
