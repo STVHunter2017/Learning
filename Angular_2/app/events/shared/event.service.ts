@@ -5,13 +5,13 @@ import {IEvent} from './event-model'
 @Injectable() //Strictly only needed if a service requires other injected services.
 export class EventService
 {
-    getEvents(){
-        let subject  = new Subject()  //Subject is an Observable
+    getEvents() : Subject<IEvent[]> {
+        let subject  = new Subject<IEvent[]>()  //Subject is an Observable
         setTimeout(() => {subject.next(EVENTS); subject.complete();}, 2000)  //This allows a record to be delivered every 100ms into subject
         return subject
     }
 
-   getEvent (id: number){
+   getEvent (id: number) :IEvent {
     return EVENTS.find(event=> event.id == id)
   }
 }
