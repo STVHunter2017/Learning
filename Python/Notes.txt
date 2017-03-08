@@ -5,6 +5,26 @@ print is a a big change between Python 2 and 3
 Colon indicates that a body will follow.
 
 (Indent) by 4.  Indentation is vital
+Don't mix spaces and tabs
 
 
+import this - to get the Zen of python
 
+import brings in librarys
+
+help () allows documentation on library
+
+use "from math import factorial" to cut down verbosity
+
+or
+
+from math import factorial as fac
+to alias - however this may cause readability issues
+
+
+/ floating point division
+// integer division
+
+python can scale integers automatically (and quickly).
+
+len(str(fac(n))) converts to a count of the string length.
