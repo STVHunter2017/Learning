@@ -1,0 +1,10 @@
+_ in the interpretter to get the last result.  Doesn't work in scripts
+
+print is a a big change between Python 2 and 3
+
+Colon indicates that a body will follow.
+
+(Indent) by 4.  Indentation is vital
+
+
+
