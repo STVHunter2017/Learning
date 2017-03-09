@@ -28,3 +28,35 @@ to alias - however this may cause readability issues
 python can scale integers automatically (and quickly).
 
 len(str(fac(n))) converts to a count of the string length.
+
+Integers : (almost) infinate size, decimal (or 0b for binary, 0o for Octal and 0X) and constructor int(3.5) for conversion
+Rounding is always to zero
+Int("") converts a int in a string to an int (optional base parameter)
+Note in intepretter int("3", 2) doesn't seem to work (version??)
+
+Float (15-16 decimal places)
+3e8 = 3x10 power 8
+float(2), float("2.5")
+Also supports Nan - not a number
+and "inf", "-inf" +- infinity
+Int with float is always converted to float
+
+None - no value.  None is sentence case
+
+bool (True, False) bool(0)
+Empty lists are considered false), empty strings are false
+so bool ("False") returns True
+
+if "eggs" 
+is equivalent to
+bool("eggs")
+
+Nexting if statements, elif can removed the nexting
+
+For Loops, While Loops (there is no Do While, Repeat until)
+To exit a loop, use break.
+
+input , gets user input
+
+% modulus operator
+
