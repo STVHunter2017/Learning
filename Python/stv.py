@@ -1,16 +1,17 @@
-import json
+class FM27():
+    def __init__ (self):
+        self.NormalDutyVapourPressureFactor = 1.3
+        
+    def RunFM27(self, state):
+       
+        PCmax = state['PCmax']
+        PCavg = state['PCavg']
+        PCMin = state['PCMin']
+        Pvap = state['Pvap']
+        SealType = state['SealType']
+        dPmin = CalculatedPmin();
 
-#results1 = json.dumps('{ state : [ {"X" : "10"}, {"Y":"20"} ] }')
-results1 = json.dumps('{"X" : "10", "Y" : "20"}')        
-#results =json.loads(results1)
-results =json.loads('{"X" : "10", "Y" : "20"}')        
+        return dPmin
 
-print (results)
-print (results1)
-
-print (results['X'])
-print (results['Y'])
-
-print (results)
-#Team City
-
+    def CalculatedPmin():
+        normalDutySeal_dPmin = (NormalDutyVapourPressureFactor * Pvap)
