@@ -1,0 +1,54 @@
+
+<html>
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+<body>
+
+<p>
+    Here's a simple Plotly plot - 
+    <a href="http://bit.ly/1Or9igj">plotly.js documentation</a>
+</p>
+
+<!-- Plots go in blank <div> elements. 
+    You can size them in the plot layout,
+    or give the div a size as shown here.
+-->
+    <!--<div id="pump-speed" style="width:90%;height:500px;"></div>-->
+    <div id="pump-speed"></div>
+<script>
+    Plotly.d3.csv('http://localhost/test/1677-Speed-04-03-2017.csv', function (rows) {
+    var trace = {
+      type: 'scatter',                    // set the chart type
+      mode: 'lines',                      // connect points with lines
+      x: rows.map(function(row){          // set the x-data
+        return row['Time'];
+      }),
+      y: rows.map(function(row){          // set the x-data
+        return row['Speed'];
+      }),
+      line: {                             // set the width of the line.
+        width: 1
+      }
+    };
+
+    var layout = {
+      title: "Pump Speed vs Time",
+      yaxis: {title: "Pump Speed"},       // set the y axis title
+      xaxis: {
+        showgrid: true,                   // remove the x-axis grid lines
+        tickformat: "%B, %Y",             // customize the date format to "month, day"
+        title: "Time"
+      },
+      margin: {                           // update the left, bottom, right, top margin
+        l: 40, b: 10, r: 10, t: 20
+      }
+    };
+
+    Plotly.plot(document.getElementById('pump-speed'), [trace], layout, {showLink: false});
+});
+</script>
+</body>
+</html>

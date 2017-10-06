@@ -1,0 +1,12 @@
+C:\Users\jmorvkrishnamoorthy\Documents\Software\RabbitMQ\RabbitMQ_Demo\AcquireSensorData\bin\Debug\AcquireSensorData.exe.config
+C:\Users\jmorvkrishnamoorthy\Documents\Software\RabbitMQ\RabbitMQ_Demo\AcquireSensorData\bin\Debug\AcquireSensorData.exe
+C:\Users\jmorvkrishnamoorthy\Documents\Software\RabbitMQ\RabbitMQ_Demo\AcquireSensorData\bin\Debug\AcquireSensorData.pdb
+C:\Users\jmorvkrishnamoorthy\Documents\Software\RabbitMQ\RabbitMQ_Demo\AcquireSensorData\bin\Debug\M2Mqtt.Net.dll
+C:\Users\jmorvkrishnamoorthy\Documents\Software\RabbitMQ\RabbitMQ_Demo\AcquireSensorData\bin\Debug\M2Mqtt.Net.pdb
+C:\Users\jmorvkrishnamoorthy\Documents\Software\RabbitMQ\RabbitMQ_Demo\AcquireSensorData\obj\Debug\AcquireSensorData.exe
+C:\Users\jmorvkrishnamoorthy\Documents\Software\RabbitMQ\RabbitMQ_Demo\AcquireSensorData\obj\Debug\AcquireSensorData.pdb
+C:\Users\jmorvkrishnamoorthy\Documents\Software\RabbitMQ\RabbitMQ_Demo\AcquireSensorData\obj\Debug\AcquireSensorData.csprojResolveAssemblyReference.cache
+C:\Users\jmorvkrishnamoorthy\Documents\Software\RabbitMQ\RabbitMQ_Demo\AcquireSensorData\bin\Debug\Common.dll
+C:\Users\jmorvkrishnamoorthy\Documents\Software\RabbitMQ\RabbitMQ_Demo\AcquireSensorData\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jmorvkrishnamoorthy\Documents\Software\RabbitMQ\RabbitMQ_Demo\AcquireSensorData\bin\Debug\Common.pdb
+C:\Users\jmorvkrishnamoorthy\Documents\Software\RabbitMQ\RabbitMQ_Demo\AcquireSensorData\bin\Debug\Newtonsoft.Json.xml

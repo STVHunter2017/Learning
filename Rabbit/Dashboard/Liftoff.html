@@ -1,0 +1,106 @@
+
+<html>
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   
+</head>
+<body>
+
+<p>
+    Here's a simple Plotly plot - 
+    <a href="http://bit.ly/1Or9igj">plotly.js documentation</a>
+</p>
+    
+    <table id="table">
+        <tbody></tbody>
+    </table>
+    <script>
+    var data = [
+    {
+        "Liftoff StartTime": "2017-04-10T14:35:46",
+        "Liftoff EndTime": "2017-04-10T14:36:51",
+        "Minimum RMS": 0.00342963077287638,
+        "Maximum RMS": 0.996950138824503,
+        "Threshold RMS": 0.10278168157803905,        
+        "Liftoff Time": "2017-04-10T14:36:51-05:00",
+        "Liftoff RMS": 0.383893191527525,
+        "Liftoff Speed": 3415.0
+    }
+    ];
+    for (i=0;i<=data.length;i++) {
+    for (n in data[i]) {
+    $('#table > tbody').append('<tr><th>' + n + '</th><td>' + data[i][n] +  '</td></tr>');
+    }
+    }
+    </script>
+<!-- Plots go in blank <div> elements. 
+    You can size them in the plot layout,
+    or give the div a size as shown here.
+-->   
+    <table>
+        <tr>
+            <td><div id="pump-speed"></div></td>
+            <td><div id="pump-rms"></div></td>
+        </tr>
+    </table>   
+<script>
+    Plotly.d3.csv('http://localhost/test/1898-Speed-04-10-2017.csv', function (rows) {
+    var trace = {
+      type: 'scatter',                    // set the chart type
+      mode: 'lines',                      // connect points with lines
+      x: rows.map(function(row){          // set the x-data
+        return row['Time'];
+      }),
+      y: rows.map(function(row){          // set the x-data
+        return row['Speed'];
+      }),
+      line: {                             // set the width of the line.
+        width: 1
+      }
+    };
+
+    var layout = {
+      title: "Liftoff (Speed vs Time)",
+      yaxis: {title: "Speed"},       // set the y axis title
+      xaxis: {
+        title: "Time",
+        showgrid: false,                  // remove the x-axis grid lines
+        tickformat: "%H:%M:%S"            // customize the date format to "hour, minute, second"
+      }
+    };
+
+    Plotly.plot(document.getElementById('pump-speed'), [trace], layout, {showLink: false});
+    });
+
+    Plotly.d3.csv('http://localhost/test/1898-RMS-04-10-2017.csv', function (rows) {
+        var trace = {
+            type: 'scatter',                    // set the chart type
+            mode: 'lines',                      // connect points with lines
+            x: rows.map(function (row) {          // set the x-data
+                return row['Time'];
+            }),
+            y: rows.map(function (row) {          // set the x-data
+                return row['RMS'];
+            }),
+            line: {                             // set the width of the line.
+                width: 1
+            }
+        };
+
+        var layout = {
+            title: "Liftoff (RMS vs Time)",
+            yaxis: { title: "RMS" },       // set the y axis title
+            xaxis: {
+                title: "Time",
+                showgrid: false,                  // remove the x-axis grid lines
+                tickformat: "%H:%M:%S"            // customize the date format to "hour, minute, second"
+            }
+        };
+
+        Plotly.plot(document.getElementById('pump-rms'), [trace], layout, { showLink: false });
+    });
+</script>
+</body>
+</html>
